@@ -16,6 +16,8 @@ Modifica el README para que queden solo:
 - Los requerimientos específicos, indicando si se han cumplido o no. En caso de no cumplirse, añade las dificultades que has tenido.
 - La URL del espacio web donde has colgado tu práctica.
 
+BORRAMOS LO DE ARRIBA
+
 ## Requerimientos específicos
 - Crea un sitio web con las siguientes características:
     - Está compuesto de 3 páginas: index.html, cervezas.html y contacto.html
