@@ -1,84 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Cervezas</title>
-	<!-- Primero la general, luego la nuestra q sobreescribir´a la principal si es necesario-->
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--meta:vp atajo emmet-->
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Cervezas</title>
+  <!-- Primero la general, luego la nuestra q sobreescribir´a la principal si es necesario-->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--meta:vp atajo emmet-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  
 
 </head>
+
 <body>
-	
-	<header>
-		<!--img.logo+h1.title{Mis cervezas}+p.subtitle{Aficiones y locuras de un amante de la cerveza}+nav>ul.menu>li.menuitem*3>a.menulink-->
+  <div id="header">
+  </div>
+  <div class="container">
+    <aside>
+      <!--div*2>(h1.bannerTitle+div.bannerBody>p*2>lorem)-->
+      <div>
+        <h1 class="bannerTitle">Anuncio 1</h1>
+        <div class="bannerBody">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis earum harum omnis minus dignissimos numquam perspiciatis aliquid a tempora iure ab, sapiente unde veritatis voluptates doloremque quod explicabo, adipisci molestiae.</p>
+          <p>Neque officia quaerat ut veritatis, placeat rem optio recusandae, ea debitis aliquam culpa in libero corrupti ad quidem enim accusamus, tempora omnis nemo. Consectetur quas libero, aliquam sed non nobis!</p>
+        </div>
+      </div>
+      <div>
+        <h1 class="bannerTitle">Anuncio 2</h1>
+        <div class="bannerBody">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci laudantium, error cupiditate temporibus blanditiis dignissimos, magni labore voluptatem eveniet pariatur nobis. Quibusdam modi officia vero delectus eius vel consectetur expedita.</p>
+          <p>Natus dignissimos, libero rem ut doloremque qui repellat ex, accusantium iusto tempore nihil animi quos provident, nisi? Ea aliquam quo sint. Fugiat labore culpa modi soluta itaque ipsa provident eius.</p>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <article>
+        <header>
+          <h1 class="newstitle">Como se tira la cerveza</h1>
+          <p class="newsdate">17 de Mayo de 2016</p>
+        </header>
+        <p>Quienes más saben de esto recomiendan la tirada especial o en dos tiempos.</p>
+        <p>El primer tiempo consiste en llenar tres cuartas partes de la copa sin generar espuma. El líquido debe caer sobre las paredes, sin movimientos de arriba y abajo de la copa y sin introducir el vaso en el grifo. Tras ponerlo en vertical, el segundo paso consiste en llenar los últimos tres centímetros de copa de una crema de espuma.</p>
+        <p>Los expertos consideran que algunas modas, como las de congelar los vasos, "mata" la cerveza.</p>
+      </article>
+      <article>
+        <header>
+          <h1 class="newstitle">El consumo moderado de cerveza tiene un efecto preventivo sobre la diabetes</h1>
+          <p class="newsdate">14 de Mayo de 2016</p>
+        </header>
+        <p>El informe fue presentado por el centro Cerveza y Salud con la colaboración de la Associació de Diabètics de Catalunya y la Federación de Diabéticos Españoles.</p>
+        <p>Varios componentes de la cerveza: la fibra soluble, los compuestos polifenólicos, los minerales y la baja graduación alcohólica, ayudan en el control de la diabetes. Además, la cerveza es capaz de aumentar la capacidad antioxidante del plasma.</p>
+      </article>
+    </main>
+  </div>
+  <footer>
+    <!--p.copyright{Sitio web realizado por un amante de la cerveza}-->
+    <p class="copyright">Sitio web realizado por un amante de la cerveza</p>
+  </footer>
+ 
 
-		<img src="img/logo.png" alt="logo" class="logo">
-		<h1 class="title">Mis cervezas</h1>
-		<p class="subtitle">Aficiones y locuras de un amante de la cerveza</p>
-		<nav>
-			<button onclick="toggle_visibility('menu');" class="btnmenu">Menu</button>
-   			
-			<ul id="menu" class="menu">
-				<li class="menuitem"><a href="index.html" class="menulink">Inicio</a></li>
-				<li class="menuitem"><a href="cervezas.html" class="menulink">Cervezas</a></li>
-				<li class="menuitem"><a href="contactar.html" class="menulink">Contactar</a></li>
-			</ul>
-		</nav>
-	</header>
-	<aside>
-		<!--div*2>(h1.bannerTitle+div.bannerBody>p*2>lorem)-->
-		<div>
-			<h1 class="bannerTitle">Anuncio 1</h1>
-			<div class="bannerBody">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis earum harum omnis minus dignissimos numquam perspiciatis aliquid a tempora iure ab, sapiente unde veritatis voluptates doloremque quod explicabo, adipisci molestiae.</p>
-				<p>Neque officia quaerat ut veritatis, placeat rem optio recusandae, ea debitis aliquam culpa in libero corrupti ad quidem enim accusamus, tempora omnis nemo. Consectetur quas libero, aliquam sed non nobis!</p>
-			</div>
-		</div>
-		<div>
-			<h1 class="bannerTitle">Anuncio 2</h1>
-			<div class="bannerBody">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci laudantium, error cupiditate temporibus blanditiis dignissimos, magni labore voluptatem eveniet pariatur nobis. Quibusdam modi officia vero delectus eius vel consectetur expedita.</p>
-				<p>Natus dignissimos, libero rem ut doloremque qui repellat ex, accusantium iusto tempore nihil animi quos provident, nisi? Ea aliquam quo sint. Fugiat labore culpa modi soluta itaque ipsa provident eius.</p>
-			</div>
-		</div>
-	</aside>
-	<main>
-		<article>
-			<header><h1 class="newstitle">Como se tira la cerveza</h1>
-				<p class="newsdate">17 de Mayo de 2016</p>
-			</header>
-	
-			<p>Quienes más saben de esto recomiendan la tirada especial o en dos tiempos.</p>
-			<p>El primer tiempo consiste en llenar tres cuartas partes de la copa sin generar espuma. El líquido debe caer sobre las paredes, sin movimientos de arriba y abajo de la copa y sin introducir el vaso en el grifo. Tras ponerlo en vertical, el segundo paso consiste en llenar los últimos tres centímetros de copa de una crema de espuma.</p>
-			<p>Los expertos consideran que algunas modas, como las de congelar los vasos, "mata" la cerveza.</p>
-		</article>
-
-		<article>
-			<header><h1 class="newstitle">El consumo moderado de cerveza tiene un efecto preventivo sobre la diabetes</h1>
-			<p class="newsdate">14 de Mayo de 2016</p>
-			</header>
-	
-			<p>El informe fue presentado por el centro Cerveza y Salud con la colaboración de la Associació de Diabètics de Catalunya y la Federación de Diabéticos Españoles.</p>
-			<p>Varios componentes de la cerveza: la fibra soluble, los compuestos polifenólicos, los minerales y la baja graduación alcohólica, ayudan en el control de la diabetes. Además, la cerveza es capaz de aumentar la capacidad antioxidante del plasma.</p>
-		</article>
-
-	</main>
-	<footer>
-		<!--p.copyright{Sitio web realizado por un amante de la cerveza}-->
-		<p class="copyright">Sitio web realizado por un amante de la cerveza</p>
-	</footer>
-
-	<script type="text/javascript">
-  		function toggle_visibility(id) {
-     	var e = document.getElementById(id);
-     	if(e.style.display == 'block')
-	        e.style.display = 'none';
-    	else
-        	e.style.display = 'block';
-  		}
-	</script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.js"></script>
+  <script src="js/templates.js"</script>
+  <script>
+  document.getElementById("header").innerHTML = Handlebars.templates.header();
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block')
+      e.style.display = 'none';
+    else
+      e.style.display = 'block';
+	}
+  </script>
 </body>
+
 </html>

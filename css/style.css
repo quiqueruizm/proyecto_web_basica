@@ -1,18 +1,17 @@
-header, footer {
-
-	background-color:orange;
+header,
+footer {
+  background-color: orange;
 }
 
-header{
-
-	overflow: hidden;
+header {
+  overflow: hidden;
 }
 
 nav {
   float: right;
 }
 
-.logo{
+.logo {
   width: 60px;
   height: auto;
   margin: 5px;
@@ -27,10 +26,12 @@ nav {
 .title {
   margin-bottom: 0;
 }
+
 .subtitle {
   margin-top: 0;
-  float:left;
+  float: left;
 }
+
 .copyright {
   text-align: center
 }
@@ -43,7 +44,57 @@ nav {
   color: white;
 }
 
-
 .subtitle {
-  float:left;
+  float: left;
+}
+
+.container {
+  margin: 0 5px;
+}
+
+
+/*en la media query los 700px son pid*/
+
+@media screen and (max-width: 700px) {
+  .btnmenu {
+    /* posicion absoluta, independiente del resto de elementos, de si las cosas estan wen bloque, etc..*/
+    position: absolute;
+    top: 25px;
+    right: 15px;
+  }
+  .menu,
+  .subtitle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .btnmenu {
+    display: none;
+  }
+  .container {
+    width: 690px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:1001px) {
+  .container {
+    width: 790px;
+    overflow: auto;
+  }
+  aside {
+    float: left;
+    width: 20%;
+  }
+  main {
+    float: left;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:1201px) {
+  .container {
+    width: 1090px;
+  }
 }
